@@ -42,3 +42,28 @@ header h1{
     
 
 }
+/* sticky position */
+nav{
+    background-color: #f4f4f4;
+    position: sticky;
+    padding: 20px;
+    top: 148px;
+
+}
+nav ul{
+    white-space: nowrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+nav li{
+    display: inline-block;
+    width: 25%;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.join{
+    color: #f63232;
+}
