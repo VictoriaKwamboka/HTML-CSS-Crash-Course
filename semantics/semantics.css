@@ -1,17 +1,25 @@
 /* static position */
 
-/* header{
-    position: static;
-} */
+header{
+    position: fixed;
+    background-color: #f63232;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    color:white;
+    padding: 6px 12px;
+    border: 8px solid white;
+    display: inline-block;
+    border-radius: 30px;
 
-/* relative position */
+}
 
-/* header{
-    position: relative;
-    left: 50px;
-    top: 50px;
-} */
-
+/* relative- parent, absolute- child */
 .banner{
     position: relative;
 }
