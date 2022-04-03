@@ -1,5 +1,12 @@
-/* static position */
+/* css reset */
 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+/* static position */
 header{
     position: fixed;
     background-color: #f63232;
@@ -47,7 +54,7 @@ nav{
     background-color: #f4f4f4;
     position: sticky;
     padding: 20px;
-    top: 148px;
+    top: 104px;
 
 }
 nav ul{
