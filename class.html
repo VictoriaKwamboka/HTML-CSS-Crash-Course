@@ -68,9 +68,12 @@
               border:inherit;
               border-radius: inherit;
               padding: inherit;
-              /* specificity overssides inheritance */
-              color:black;
-             
+              /* specificity overrides inheritance */
+              color:red;
+          }
+            /* less specific than the one above */
+          p{
+              color: orange;
           }
     </style>
 </head>
