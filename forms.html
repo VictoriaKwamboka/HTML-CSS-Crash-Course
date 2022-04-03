@@ -10,13 +10,13 @@
     <h1>HTML Forms Practice</h1>
     <form action="">
         <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name">
+        <input type="text" id="first-name" name="first-name" placeholder="First Name...">
         <br><br>
         <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name">
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name...">
         <br><br>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" placeholder="Email...">
         <br><br>
         <p for="age">Select your age: </p>
         
@@ -40,6 +40,20 @@
             <option value="question-2">In which town were you born?</option>
             <option value="question-3">What is your favorite meal?</option>
         </select>
+
+        <br><br>
+
+        <label for="answer">Security question answer: </label>
+        <input type="text" name="answer" id="answer">
+
+        <br><br>
+
+        <label for="bio">Your bio:</label>
+        <br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter your bio here..."></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit the form">
 
 
     </form>
