@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and selectors</title>
+
+    <style>
+        p.error{
+            color: red;
+        }
+        p.success{
+            color: green;
+        }
+        p.success.feedback{
+           color: blue;
+        }
+        div#content{
+            background-color: #ebebeb;
+            padding: 30px;
+            margin: 30px;
+            border: black solid 1px;
+        }
+        div.outside-div p{
+            color: red;
+            padding: 20px;
+            background-color: #ebebeb;
+            text-align: center;
+            border: black dotted 3px;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+        /* attribute selector */
+        a[href="https://github.com/VictoriaKwamboka"]{
+            color: rgb(40, 219, 40);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        /* select all anchor tags with 'google' in them */
+        a[href*="google"]{
+            border: 2px solid black;
+            color: white;
+            background-color: slateblue;
+
+        }
+        /* ends with kwambosh */
+        a[href$=".kwambosh"]{
+            color: rgb(15, 177, 115);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nihil unde voluptatem assumenda vitae dignissimos veritatis laboriosam ipsa at ut, impedit provident dolor saepe debitis, quos ratione nemo? Dolor, ducimus.
+        Architecto rerum numquam ducimus illum dolore est quaerat ab consectetur voluptates explicabo dolor doloribus quibusdam atque odit minus neque, veniam nemo ipsum nobis a dolorem iste eveniet? Voluptatibus, maxime delectus?
+        Eum enim doloremque soluta, nemo non voluptas voluptatem. Magnam dignissimos, quod a sed sunt totam debitis unde, alias tempore voluptates modi. Sunt temporibus qui harum, cumque itaque perspiciatis fuga impedit!</p>
+        
+        <p class="success">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore non, a numquam esse nihil nisi laudantium eligendi at quidem, fugiat culpa! Voluptatum itaque deleniti recusandae suscipit quo, possimus fugit nisi!
+        Officiis omnis eligendi architecto hic laboriosam corrupti numquam voluptatum, sed in velit autem ex, laudantium praesentium delectus culpa sit! Temporibus fugiat asperiores molestias adipisci iusto facilis totam, sed tempore laborum.
+        Praesentium aliquam sunt debitis aut porro assumenda soluta a maiores necessitatibus, repellendus delectus ducimus iste eius, nesciunt dolorum saepe doloremque voluptates illo similique exercitationem. Eligendi ea dicta debitis ad voluptatum?</p>
+        <p class="success feedback">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore non, a numquam esse nihil nisi laudantium eligendi at quidem, fugiat culpa! Voluptatum itaque deleniti recusandae suscipit quo, possimus fugit nisi!
+        Officiis omnis eligendi architecto hic laboriosam corrupti numquam voluptatum, sed in velit autem ex, laudantium praesentium delectus culpa sit! Temporibus fugiat asperiores molestias adipisci iusto facilis totam, sed tempore laborum.
+        Praesentium aliquam sunt debitis aut porro assumenda soluta a maiores necessitatibus, repellendus delectus ducimus iste eius, nesciunt dolorum saepe doloremque voluptates illo similique exercitationem. Eligendi ea dicta debitis ad voluptatum?</p>
+        <p class="error">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore non, a numquam esse nihil nisi laudantium eligendi at quidem, fugiat culpa! Voluptatum itaque deleniti recusandae suscipit quo, possimus fugit nisi!
+        Officiis omnis eligendi architecto hic laboriosam corrupti numquam voluptatum, sed in velit autem ex, laudantium praesentium delectus culpa sit! Temporibus fugiat asperiores molestias adipisci iusto facilis totam, sed tempore laborum.
+        Praesentium aliquam sunt debitis aut porro assumenda soluta a maiores necessitatibus, repellendus delectus ducimus iste eius, nesciunt dolorum saepe doloremque voluptates illo similique exercitationem. Eligendi ea dicta debitis ad voluptatum?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat maiores iste expedita quos illum modi mollitia, earum quidem natus sit odio non, dolor nesciunt ducimus dicta accusamus eaque et!</p>
+
+    <div class="outside-div">
+        <p>I am an outside div</p>
+    </div>
+    
+    <div>
+        <p>Here is my <a href="https://github.com/VictoriaKwamboka">GitHub</a> account for your perusal!</p>
+        <p><a href="https://google.com">Google</a></p>
+        <p><a href="https://www.google.com/search?q=gooog+etc&rlz=1C5CHFA_enKE984KE984&oq=gooog+etc&aqs=chrome..69i57.2739j0j7&sourceid=chrome&ie=UTF-8">Homepage</a></p>
+        <p><a href="https://vick.kwambosh">Kwambosh tag</a></p>
+
+    </div>
+</body>
+</html>
