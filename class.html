@@ -7,7 +7,7 @@
     <title>Classes and selectors</title>
 
     <style>
-        p.error{
+        /* p.error{
             color: red;
         }
         p.success{
@@ -31,7 +31,9 @@
             margin-left: 70px;
             margin-right: 70px;
         }
-        /* attribute selector */
+       */
+    
+        /* attribute selector for an exact match
         a[href="https://github.com/VictoriaKwamboka"]{
             color: rgb(40, 219, 40);
             text-decoration: none;
@@ -39,18 +41,34 @@
             text-transform: uppercase;
         }
         /* select all anchor tags with 'google' in them */
-        a[href*="google"]{
+        /* a[href*="google"]{
             border: 2px solid black;
             color: white;
             background-color: slateblue;
 
-        }
+        } */
         /* ends with kwambosh */
-        a[href$=".kwambosh"]{
+        /* a[href$=".kwambosh"]{
             color: rgb(15, 177, 115);
             text-decoration: none;
-        }
+        } 
+          */
 
+          /* inheritance */
+          div{
+              color:lightcoral;
+              margin: 20px;
+              border: 2px solid blue;
+              border-radius: 5%;
+              padding: 10px;
+              background-color: lightcyan;
+          }
+          p{
+              border:inherit;
+              border-radius: inherit;
+              padding: inherit;
+             
+          }
     </style>
 </head>
 <body>
