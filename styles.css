@@ -31,7 +31,13 @@ li{
     list-style-type: none;
     /* text-shadow:2px 2px lightblue; */
     font-size: 20px;
-    text-shadow: 2px 2px #15a5b8;
+    text-shadow: 2px 2px #44a1ad;
     
+}
+span{
+    display: block;
+}
+div{
+    display: inline;
 }
 
